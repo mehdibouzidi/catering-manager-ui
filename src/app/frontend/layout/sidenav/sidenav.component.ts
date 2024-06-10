@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SidebarService } from 'src/app/services/sidebar/sidebar.service';
+import { SidebarService } from 'src/app/frontend/services/sidebar/sidebar.service';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
@@ -20,7 +20,8 @@ export class SidebarComponent implements OnInit {
 
 
   isSidebarVisible = true;
-  isSubmenuOpen = false;
+  isDataSubmenuOpen = false;
+  isOpSubmenuOpen = false;
   isDashboardSelected = false;
 
 
@@ -39,10 +40,13 @@ export class SidebarComponent implements OnInit {
   }
 
 
-  toggleSubmenu() {
-    this.isSubmenuOpen = !this.isSubmenuOpen;
+  toggleDataSubmenu() {
+    this.isDataSubmenuOpen = !this.isDataSubmenuOpen;
   }
 
+  toggleOpSubmenu() {
+    this.isOpSubmenuOpen = !this.isOpSubmenuOpen;
+  }
 
   selectDashboard() {
     this.isDashboardSelected = true;

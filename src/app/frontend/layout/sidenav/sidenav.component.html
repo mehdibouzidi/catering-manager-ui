@@ -1,0 +1,35 @@
+<div class="sidebar" [ngClass]="{ 'showSidebar': isSidebarVisible, 'hideSidebar': !isSidebarVisible }" [@fadeInOut]>
+    <ul>
+      <li>
+        <a routerLinkActive="active" (click)="toggleDataSubmenu()">
+          <span class="menu-icon material-icons">storage</span>
+          <span class="menu-text">Data</span>
+          <span class="sub-menu-icon" [ngClass]="{ 'sub-menu-open': isDataSubmenuOpen }">
+            <mat-icon>{{ isDataSubmenuOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+          </span>
+        </a>
+        <!-- Sub-menu for Dashboard with left padding -->
+        <ul *ngIf="isDataSubmenuOpen" class="sub-menu">
+          <li><a routerLink="/dashboard" routerLinkActive="active"><span class="menu-icon material-icons">sort</span><span class="menu-text">Familles</span></a></li>
+          <li><a routerLink="/dashboard/messages" routerLinkActive="active"><span class="menu-icon material-icons">balance</span><span class="menu-text">Unités</span></a></li>
+          <li><a routerLink="/dashboard/messages" routerLinkActive="active"><span class="menu-icon material-icons">edit</span><span class="menu-text">Ingrédients</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a routerLinkActive="active" (click)="toggleOpSubmenu()">
+          <span class="menu-icon material-icons">build</span>
+          <span class="menu-text">Opérations</span>
+          <span class="sub-menu-icon" [ngClass]="{ 'sub-menu-open': isOpSubmenuOpen }">
+            <mat-icon>{{ isOpSubmenuOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+          </span>
+        </a>
+        <!-- Sub-menu for Dashboard with left padding -->
+        <ul *ngIf="isOpSubmenuOpen" class="sub-menu">
+          <li><a routerLink="/dashboard" routerLinkActive="active"><span class="menu-icon material-icons">text_format</span><span class="menu-text">Nomenclatures</span></a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+

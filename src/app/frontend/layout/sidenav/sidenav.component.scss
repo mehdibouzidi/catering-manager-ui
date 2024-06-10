@@ -23,7 +23,7 @@
 .sidebar {
   // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background-color: #322653;
-  width: 200px;
+  width: 250px;
   padding: 20px;
   position: fixed;
   height: 100%;
@@ -72,7 +72,7 @@
 }
 
 .sub-menu {
-  padding-left: 20px; /* Adjust the value to your desired padding */
+  padding-left: 10px !important; /* Adjust the value to your desired padding */
 }
 
 

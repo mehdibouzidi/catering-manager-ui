@@ -7,10 +7,10 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './layout/header/header.component';
-import { SidebarComponent } from './layout/sidenav/sidenav.component';
-import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './frontend/layout/header/header.component';
+import { SidebarComponent } from './frontend/layout/sidenav/sidenav.component';
+import { HomeComponent } from './frontend/home/home.component';
+import { DashboardComponent } from './frontend/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -19,12 +19,11 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
-import { MainComponent } from './main/main.component';
-import { RouterLinkActiveExactDirective } from './main/appRouterLinkActiveExact.directive';
-import { ProfileComponent } from './pages/profile/profile.component';
+import { MainComponent } from './frontend/main/main.component';
+import { RouterLinkActiveExactDirective } from './frontend/main/appRouterLinkActiveExact.directive';
+import { ProfileComponent } from './frontend/pages/admin/profile/profile.component';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
-import { TimetableComponent } from './pages/timetable/timetable.component';
 
 // Import FormsModule
 @NgModule({
@@ -37,7 +36,6 @@ import { TimetableComponent } from './pages/timetable/timetable.component';
     MainComponent,
     RouterLinkActiveExactDirective,
     ProfileComponent,
-    TimetableComponent,
   ],
   imports: [
     BrowserModule,

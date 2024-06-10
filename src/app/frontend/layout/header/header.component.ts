@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
-import { SidebarService } from 'src/app/services/sidebar/sidebar.service';
+import { SidebarService } from 'src/app/frontend/services/sidebar/sidebar.service';
 import { SidebarComponent } from '../sidenav/sidenav.component';
 
 @Component({
