@@ -57,7 +57,7 @@ import {OverlayModule} from '@angular/cdk/overlay';
 import { MainComponent } from './frontend/main/main.component';
 import { RouterLinkActiveExactDirective } from './frontend/main/appRouterLinkActiveExact.directive';
 import { ProfileComponent } from './frontend/pages/admin/profile/profile.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddUniteComponent } from './frontend/pages/business/unite/add-unite/add-unite.component';
 import { EditUniteComponent } from './frontend/pages/business/unite/edit-unite/edit-unite.component';
 import { ShowUniteComponent } from './frontend/pages/business/unite/show-unite/show-unite.component';
@@ -162,6 +162,7 @@ const MATERIAL_MODULES =  [
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule, 
     // * MATERIAL IMPORTS
     MATERIAL_MODULES
   ],
