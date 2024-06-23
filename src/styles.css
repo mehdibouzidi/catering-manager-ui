@@ -5,9 +5,24 @@ body { margin: 0; font-family: Arial, Roboto, "Helvetica Neue", sans-serif; }
 table {
     width: 100%;
 }
+
 .component-header h1{
   margin-left:  1%; 
 }
+
+.component-filters{
+  width: 100%;
+  margin: 20px;
+}
+
+.component-filters .input, .component-filters .button{
+  margin-right: 25px;
+}
+
+.action-btn{
+  margin-right: 15px;
+}
+
 .mat-elevation-z8{
   width: 95%;
   margin: 2%;

@@ -47,7 +47,7 @@ export interface PeriodicElement {
 export class AllUnitesComponent implements OnInit  {
   
   //Front Variables
-  displayedColumns: string[] = ['name', 'code'];
+  displayedColumns: string[] = ['name', 'code', 'actions'];
   dataSource;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
@@ -87,6 +87,7 @@ export class AllUnitesComponent implements OnInit  {
     this.search();
     return event;
   }
+  
   checkCriteria(){
     this.criteria.name = this.criteria.name == "" ?  null : this.criteria.name;
     this.criteria.code = this.criteria.code == "" ? null: this.criteria.code;
@@ -98,9 +99,6 @@ export class AllUnitesComponent implements OnInit  {
         if(response!=null){
           this.payload = response;
           this.dataSource = new MatTableDataSource<UnitPayload>(this.payload.elements);
-
-          //this.dataSource.paginator.pageIndex = 1;
-          //this.dataSource.paginator.pageSize = 10;
         }
       },
       error:()=>{

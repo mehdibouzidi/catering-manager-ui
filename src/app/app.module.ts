@@ -161,6 +161,7 @@ const MATERIAL_MODULES =  [
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
     // * MATERIAL IMPORTS
     MATERIAL_MODULES
   ],

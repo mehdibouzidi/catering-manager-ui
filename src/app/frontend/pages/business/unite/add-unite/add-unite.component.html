@@ -1,1 +1,15 @@
-<p>add-unite works!</p>
+<h1 mat-dialog-title>Ajouter une Unité de Mesure</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Nom</mat-label>
+    <input matInput [(ngModel)]="data.animal">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Code</mat-label>
+    <input matInput [(ngModel)]="data.animal">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Annuler</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial color="primary">Ajouter</button>
+</div>
