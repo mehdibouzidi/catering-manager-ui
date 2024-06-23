@@ -77,6 +77,7 @@ import { AddSousFamilleComponent } from './frontend/pages/business/familles/add-
 import { EditFamilleComponent } from './frontend/pages/business/familles/edit-famille/edit-famille.component';
 import { EditSousFamilleComponent } from './frontend/pages/business/familles/edit-sous-famille/edit-sous-famille.component';
 import { AllUnitesComponent } from './frontend/pages/business/unite/all-unites/all-unites.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const MATERIAL_MODULES =  [
   A11yModule,
@@ -159,13 +160,14 @@ const MATERIAL_MODULES =  [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     // * MATERIAL IMPORTS
     MATERIAL_MODULES
   ],
   exports: [
     MATERIAL_MODULES
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

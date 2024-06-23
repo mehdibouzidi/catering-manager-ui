@@ -14,7 +14,7 @@ export class UnitService {
   constructor(private http: HttpClient) { 
   }
 
-  getAllBookHomeRatings(criteria: UnitCriteria){
+  findAllByCriteria(criteria: UnitCriteria){
     return this.http.post( `${RequestsConstants.UNIT_FINDALL_CRITERIA_REQ}`, criteria);
   }
 

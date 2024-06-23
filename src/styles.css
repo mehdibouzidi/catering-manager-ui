@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Arial, Roboto, "Helvetica Neue", sans-serif; }
 table {
     width: 100%;
-  }
+}
+.component-header h1{
+  margin-left:  1%; 
+}
+.mat-elevation-z8{
+  width: 95%;
+  margin: 2%;
+}
