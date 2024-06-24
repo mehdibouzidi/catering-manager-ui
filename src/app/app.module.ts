@@ -58,17 +58,13 @@ import { MainComponent } from './frontend/main/main.component';
 import { RouterLinkActiveExactDirective } from './frontend/main/appRouterLinkActiveExact.directive';
 import { ProfileComponent } from './frontend/pages/admin/profile/profile.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AddUniteComponent } from './frontend/pages/business/unite/add-unite/add-unite.component';
-import { EditUniteComponent } from './frontend/pages/business/unite/edit-unite/edit-unite.component';
-import { ShowUniteComponent } from './frontend/pages/business/unite/show-unite/show-unite.component';
-import { AllNomenclaturesComponent } from './frontend/pages/business/nomenclature/all-nomenclatures/all-nomenclatures.component';
-import { AddNomenclatureComponent } from './frontend/pages/business/nomenclature/add-nomenclature/add-nomenclature.component';
-import { ShowNomenclatureComponent } from './frontend/pages/business/nomenclature/show-nomenclature/show-nomenclature.component';
-import { EditNomenclatureComponent } from './frontend/pages/business/nomenclature/edit-nomenclature/edit-nomenclature.component';
-import { AllIngredientsComponent } from './frontend/pages/business/ingredients/all-ingredients/all-ingredients.component';
-import { EditIngredientComponent } from './frontend/pages/business/ingredients/edit-ingredient/edit-ingredient.component';
-import { ShowIngredientComponent } from './frontend/pages/business/ingredients/show-ingredient/show-ingredient.component';
-import { AddIngredientComponent } from './frontend/pages/business/ingredients/add-ingredient/add-ingredient.component';
+import { AddUniteComponent } from './frontend/pages/business/unites/add-unite/add-unite.component';
+import { EditUniteComponent } from './frontend/pages/business/unites/edit-unite/edit-unite.component';
+import { ShowUniteComponent } from './frontend/pages/business/unites/show-unite/show-unite.component';
+import { AllNomenclaturesComponent } from './frontend/pages/business/nomenclatures/all-nomenclatures/all-nomenclatures.component';
+import { AddNomenclatureComponent } from './frontend/pages/business/nomenclatures/add-nomenclature/add-nomenclature.component';
+import { ShowNomenclatureComponent } from './frontend/pages/business/nomenclatures/show-nomenclature/show-nomenclature.component';
+import { EditNomenclatureComponent } from './frontend/pages/business/nomenclatures/edit-nomenclature/edit-nomenclature.component';
 import { AllFamillesComponent } from './frontend/pages/business/familles/all-familles/all-familles.component';
 import { ShowFamilleComponent } from './frontend/pages/business/familles/show-famille/show-famille.component';
 import { ShowSousFamilleComponent } from './frontend/pages/business/familles/show-sous-famille/show-sous-famille.component';
@@ -76,8 +72,11 @@ import { AddFamilleComponent } from './frontend/pages/business/familles/add-fami
 import { AddSousFamilleComponent } from './frontend/pages/business/familles/add-sous-famille/add-sous-famille.component';
 import { EditFamilleComponent } from './frontend/pages/business/familles/edit-famille/edit-famille.component';
 import { EditSousFamilleComponent } from './frontend/pages/business/familles/edit-sous-famille/edit-sous-famille.component';
-import { AllUnitesComponent } from './frontend/pages/business/unite/all-unites/all-unites.component';
+import { AllUnitesComponent } from './frontend/pages/business/unites/all-unites/all-unites.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AllProductsComponent } from './frontend/pages/business/products/all-products/all-products.component';
+import { AddProductComponent } from './frontend/pages/business/products/add-product/add-product.component';
+import { EditProductComponent } from './frontend/pages/business/products/edit-product/edit-product.component';
 
 const MATERIAL_MODULES =  [
   A11yModule,
@@ -144,10 +143,10 @@ const MATERIAL_MODULES =  [
     AddNomenclatureComponent,
     ShowNomenclatureComponent,
     EditNomenclatureComponent,
-    AllIngredientsComponent,
-    EditIngredientComponent,
-    ShowIngredientComponent,
-    AddIngredientComponent,
+    AllProductsComponent,
+    AddProductComponent,
+    EditProductComponent,
+    ShowFamilleComponent,
     AllFamillesComponent,
     ShowFamilleComponent,
     ShowSousFamilleComponent,

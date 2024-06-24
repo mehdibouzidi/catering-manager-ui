@@ -22,13 +22,13 @@ export class RequestsConstants{
     static readonly SUB_CATEGORY_DELETE_REQ = RequestsConstants.SUB_CATEGORY_REQ + UtilStatic.SLASH + UtilStatic.DELETE;
     static readonly SUB_CATEGORY_FINDALL_REQ = RequestsConstants.SUB_CATEGORY_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL;
     static readonly SUB_CATEGORY_FINDALL_CRITERIA_REQ = RequestsConstants.SUB_CATEGORY_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL_BY_CRITERIA;
-    //INGREDIENT
-    static readonly INGREDIENT_REQ = RequestsConstants.API_SOURCE + BusinessConstants.INGREDIENT;
-    static readonly INGREDIENT_ADD_REQ = RequestsConstants.INGREDIENT_REQ + UtilStatic.SLASH + UtilStatic.ADD;
-    static readonly INGREDIENT_UPDATE_REQ = RequestsConstants.INGREDIENT_REQ + UtilStatic.SLASH + UtilStatic.UPDATE;
-    static readonly INGREDIENT_DELETE_REQ = RequestsConstants.INGREDIENT_REQ + UtilStatic.SLASH + UtilStatic.DELETE;
-    static readonly INGREDIENT_FINDALL_REQ = RequestsConstants.INGREDIENT_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL;
-    static readonly INGREDIENT_FINDALL_CRITERIA_REQ = RequestsConstants.INGREDIENT_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL_BY_CRITERIA;
+    //PRODUCT
+    static readonly PRODUCT_REQ = RequestsConstants.API_SOURCE + BusinessConstants.PRODUCT;
+    static readonly PRODUCT_ADD_REQ = RequestsConstants.PRODUCT_REQ + UtilStatic.SLASH + UtilStatic.ADD;
+    static readonly PRODUCT_UPDATE_REQ = RequestsConstants.PRODUCT_REQ + UtilStatic.SLASH + UtilStatic.UPDATE;
+    static readonly PRODUCT_DELETE_REQ = RequestsConstants.PRODUCT_REQ + UtilStatic.SLASH + UtilStatic.DELETE;
+    static readonly PRODUCT_FINDALL_REQ = RequestsConstants.PRODUCT_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL;
+    static readonly PRODUCT_FINDALL_CRITERIA_REQ = RequestsConstants.PRODUCT_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL_BY_CRITERIA;
     //UNIT
     static readonly UNIT_REQ = RequestsConstants.API_SOURCE + BusinessConstants.UNIT;
     static readonly UNIT_ADD_REQ = RequestsConstants.UNIT_REQ + UtilStatic.SLASH + UtilStatic.ADD;

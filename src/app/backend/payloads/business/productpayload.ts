@@ -1,7 +1,7 @@
 import { SubCategoryPayload } from "./subcategorypayload";
 import { UnitPayload } from "./unitpayload";
 
-export class IngredientPayload {
+export class ProductPayload {
     id: number;
     name: string;
     casubCategorytegory: SubCategoryPayload;

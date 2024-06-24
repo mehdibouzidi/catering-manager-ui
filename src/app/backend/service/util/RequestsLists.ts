@@ -24,12 +24,12 @@ export class RequestsLists{
         new Request(RequestsLists.POST, RequestsConstants.SUB_CATEGORY_FINDALL_REQ),
         new Request(RequestsLists.POST, RequestsConstants.SUB_CATEGORY_FINDALL_CRITERIA_REQ),
 
-        new Request(RequestsLists.GET, RequestsConstants.INGREDIENT_REQ),
-        new Request(RequestsLists.POST, RequestsConstants.INGREDIENT_ADD_REQ),
-        new Request(RequestsLists.PUT, RequestsConstants.INGREDIENT_UPDATE_REQ),
-        new Request(RequestsLists.DELETE, RequestsConstants.INGREDIENT_DELETE_REQ),
-        new Request(RequestsLists.POST, RequestsConstants.INGREDIENT_FINDALL_REQ),
-        new Request(RequestsLists.POST, RequestsConstants.INGREDIENT_FINDALL_CRITERIA_REQ),
+        new Request(RequestsLists.GET, RequestsConstants.PRODUCT_REQ),
+        new Request(RequestsLists.POST, RequestsConstants.PRODUCT_ADD_REQ),
+        new Request(RequestsLists.PUT, RequestsConstants.PRODUCT_UPDATE_REQ),
+        new Request(RequestsLists.DELETE, RequestsConstants.PRODUCT_DELETE_REQ),
+        new Request(RequestsLists.POST, RequestsConstants.PRODUCT_FINDALL_REQ),
+        new Request(RequestsLists.POST, RequestsConstants.PRODUCT_FINDALL_CRITERIA_REQ),
 
         new Request(RequestsLists.GET, RequestsConstants.UNIT_REQ),
         new Request(RequestsLists.POST, RequestsConstants.UNIT_ADD_REQ),
