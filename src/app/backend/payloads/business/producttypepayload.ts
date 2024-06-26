@@ -1,4 +1,4 @@
-export class CategoryPayload {
+export class ProductTypePayload {
     id: number;
     code: string;
     name: string;
