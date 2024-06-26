@@ -1,8 +1,6 @@
-import { ProductTypePayload } from "./producttypepayload";
-import { SubCategoryPayload } from "./subcategorypayload";
-import { UnitPayload } from "./unitpayload";
+import { ProductPayload } from "./productpayload";
 
-export class ProductPayload {
+export class NomenclaturePayload {
     id: number;
     code: string;
     name: string;
