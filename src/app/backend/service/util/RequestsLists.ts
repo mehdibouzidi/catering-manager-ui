@@ -31,6 +31,20 @@ export class RequestsLists{
         new Request(RequestsLists.POST, RequestsConstants.PRODUCT_FINDALL_REQ),
         new Request(RequestsLists.POST, RequestsConstants.PRODUCT_FINDALL_CRITERIA_REQ),
 
+        new Request(RequestsLists.GET, RequestsConstants.PRODUCT_TYPE_REQ),
+        new Request(RequestsLists.POST, RequestsConstants.PRODUCT_TYPE_ADD_REQ),
+        new Request(RequestsLists.PUT, RequestsConstants.PRODUCT_TYPE_UPDATE_REQ),
+        new Request(RequestsLists.DELETE, RequestsConstants.PRODUCT_TYPE_DELETE_REQ),
+        new Request(RequestsLists.POST, RequestsConstants.PRODUCT_TYPE_FINDALL_REQ),
+        new Request(RequestsLists.POST, RequestsConstants.PRODUCT_TYPE_FINDALL_CRITERIA_REQ),
+
+        new Request(RequestsLists.GET, RequestsConstants.NOMENCLATURE_REQ),
+        new Request(RequestsLists.POST, RequestsConstants.NOMENCLATURE_ADD_REQ),
+        new Request(RequestsLists.PUT, RequestsConstants.NOMENCLATURE_UPDATE_REQ),
+        new Request(RequestsLists.DELETE, RequestsConstants.NOMENCLATURE_DELETE_REQ),
+        new Request(RequestsLists.POST, RequestsConstants.NOMENCLATURE_FINDALL_REQ),
+        new Request(RequestsLists.POST, RequestsConstants.NOMENCLATURE_FINDALL_CRITERIA_REQ),
+
         new Request(RequestsLists.GET, RequestsConstants.UNIT_REQ),
         new Request(RequestsLists.POST, RequestsConstants.UNIT_ADD_REQ),
         new Request(RequestsLists.PUT, RequestsConstants.UNIT_UPDATE_REQ),
