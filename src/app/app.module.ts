@@ -77,6 +77,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AllProductsComponent } from './frontend/pages/business/products/all-products/all-products.component';
 import { AddProductComponent } from './frontend/pages/business/products/add-product/add-product.component';
 import { EditProductComponent } from './frontend/pages/business/products/edit-product/edit-product.component';
+import { AllProductTypesComponent } from './frontend/pages/business/typeproduit/all-product-types/all-product-types.component';
+import { AddProductTypeComponent } from './frontend/pages/business/typeproduit/add-product-type/add-product-type.component';
+import { ShowProductTypeComponent } from './frontend/pages/business/typeproduit/show-product-type/show-product-type.component';
+import { EditProductTypeComponent } from './frontend/pages/business/typeproduit/edit-product-type/edit-product-type.component';
 
 const MATERIAL_MODULES =  [
   A11yModule,
@@ -154,6 +158,10 @@ const MATERIAL_MODULES =  [
     AddSousFamilleComponent,
     EditFamilleComponent,
     EditSousFamilleComponent,
+    AllProductTypesComponent,
+    AddProductTypeComponent,
+    ShowProductTypeComponent,
+    EditProductTypeComponent,
   ],
   imports: [
     BrowserModule,
