@@ -1,6 +1,6 @@
 export class BusinessConstants{
     static readonly  CATEGORY = 'category';
-    static readonly  SUB_CATEGORY = 'subcateogry';
+    static readonly  SUB_CATEGORY = 'subcategory';
     static readonly  PRODUCT = 'product';
     static readonly  PRODUCT_TYPE = 'producttype';
     static readonly  NOMENCLATURE = 'nomenclature';

@@ -11,13 +11,6 @@ import { UnitService } from 'src/app/backend/service/business/unit.service';
 import { AddUniteComponent } from '../add-unite/add-unite.component';
 import { MatDialog } from '@angular/material/dialog';
 
-
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-}
 @Component({
   selector: 'app-all-unites',
   templateUrl: './all-unites.component.html',
@@ -34,7 +27,6 @@ export class AllUnitesComponent implements OnInit  {
   
   //Back Variables
   criteria = new UnitCriteria();
-  unitCriteria = new UnitCriteria();
   globalPayload = new GlobalPayload<UnitPayload>();
 
 
