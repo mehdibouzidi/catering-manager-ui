@@ -17,6 +17,10 @@ export class SubCategoryService {
     return this.http.post( `${RequestsConstants.SUB_CATEGORY_FINDALL_CRITERIA_REQ}`, criteria);
   }
 
+  findAll(){
+    return this.http.get( `${RequestsConstants.SUB_CATEGORY_FINDALL_REQ}`);
+  }
+
   add(payload: SubCategoryPayload){
     return this.http.post( RequestsConstants.SUB_CATEGORY_ADD_REQ, payload);
   }

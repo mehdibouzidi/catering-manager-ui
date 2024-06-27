@@ -6,7 +6,7 @@ export class ProductPayload {
     id: number;
     code: string;
     name: string;
-    casubCategorytegory: SubCategoryPayload;
+    subCategory: SubCategoryPayload;
     unit: UnitPayload;
     type: ProductTypePayload;
 }

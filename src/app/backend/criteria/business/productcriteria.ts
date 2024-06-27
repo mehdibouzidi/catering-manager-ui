@@ -4,17 +4,17 @@ export class ProductCriteria extends CommonCriteria{
     id: number;
     code: string;
     name: string;
-    subCategoryId: number;
-    unitId: number;
-    typeId: number;
+    subCategoryName: string;
+    unitName: string;
+    typeName: string;
 
     constructor(){
         super();
         this.id = null;
         this.code = null;
         this.name = null;
-        this.subCategoryId = null;
-        this.unitId = null;
-        this.typeId = null;
+        this.subCategoryName = null;
+        this.unitName = null;
+        this.typeName = null;
     }
 }

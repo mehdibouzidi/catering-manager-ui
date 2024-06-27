@@ -17,6 +17,10 @@ export class UnitService {
   findAllByCriteria(criteria: UnitCriteria){
     return this.http.post( `${RequestsConstants.UNIT_FINDALL_CRITERIA_REQ}`, criteria);
   }
+  
+  findAll(){
+    return this.http.get( `${RequestsConstants.UNIT_FINDALL_REQ}`);
+  }
 
   add(payload: UnitPayload){
     return this.http.post( RequestsConstants.UNIT_ADD_REQ, payload);

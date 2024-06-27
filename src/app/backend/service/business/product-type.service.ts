@@ -18,6 +18,10 @@ export class ProductTypeService {
     return this.http.post( `${RequestsConstants.PRODUCT_TYPE_FINDALL_CRITERIA_REQ}`, criteria);
   }
 
+  findAll(){
+    return this.http.get( `${RequestsConstants.PRODUCT_TYPE_FINDALL_REQ}`);
+  }
+
   add(payload: ProductTypePayload){
     return this.http.post( RequestsConstants.PRODUCT_TYPE_ADD_REQ, payload);
   }

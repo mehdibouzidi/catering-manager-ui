@@ -30,14 +30,14 @@ export class RequestsConstants{
     static readonly PRODUCT_FINDALL_REQ = RequestsConstants.PRODUCT_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL;
     static readonly PRODUCT_FINDALL_CRITERIA_REQ = RequestsConstants.PRODUCT_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL_BY_CRITERIA;
     //PRODUCT TYPE
-    static readonly PRODUCT_TYPE_REQ = RequestsConstants.API_SOURCE + BusinessConstants.PRODUCT;
+    static readonly PRODUCT_TYPE_REQ = RequestsConstants.API_SOURCE + BusinessConstants.PRODUCT_TYPE;
     static readonly PRODUCT_TYPE_ADD_REQ = RequestsConstants.PRODUCT_TYPE_REQ + UtilStatic.SLASH + UtilStatic.ADD;
     static readonly PRODUCT_TYPE_UPDATE_REQ = RequestsConstants.PRODUCT_TYPE_REQ + UtilStatic.SLASH + UtilStatic.UPDATE;
     static readonly PRODUCT_TYPE_DELETE_REQ = RequestsConstants.PRODUCT_TYPE_REQ + UtilStatic.SLASH + UtilStatic.DELETE;
     static readonly PRODUCT_TYPE_FINDALL_REQ = RequestsConstants.PRODUCT_TYPE_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL;
     static readonly PRODUCT_TYPE_FINDALL_CRITERIA_REQ = RequestsConstants.PRODUCT_TYPE_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL_BY_CRITERIA;
     //NOMENCLATURE
-    static readonly NOMENCLATURE_REQ = RequestsConstants.API_SOURCE + BusinessConstants.PRODUCT;
+    static readonly NOMENCLATURE_REQ = RequestsConstants.API_SOURCE + BusinessConstants.NOMENCLATURE;
     static readonly NOMENCLATURE_ADD_REQ = RequestsConstants.NOMENCLATURE_REQ + UtilStatic.SLASH + UtilStatic.ADD;
     static readonly NOMENCLATURE_UPDATE_REQ = RequestsConstants.NOMENCLATURE_REQ + UtilStatic.SLASH + UtilStatic.UPDATE;
     static readonly NOMENCLATURE_DELETE_REQ = RequestsConstants.NOMENCLATURE_REQ + UtilStatic.SLASH + UtilStatic.DELETE;
