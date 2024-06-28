@@ -1,1 +1,92 @@
-<p>all-nomenclatures works!</p>
+<div>
+    <div class="component-header">
+      <h1>Nomenclature</h1>
+    </div>
+    <div class="component-filters">
+      <form class="form">
+        <mat-form-field class="input">
+          <mat-label>Nom</mat-label>
+          <input matInput placeholder="Ex. Nomenclature" name="name" [(ngModel)]="criteria.name">
+        </mat-form-field>
+      
+        <mat-form-field class="input">
+          <mat-label>Code</mat-label>
+          <input matInput placeholder="Ex. 001" name="code" [(ngModel)]="criteria.code">
+        </mat-form-field>
+        <button mat-raised-button color="primary" class="button" (click)="search()">Rechercher</button>
+        <button mat-raised-button color="primary" class="button" (click)="openAddDialog()">Ajouter</button>
+      </form>
+    </div>
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)">
+  
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Nom </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+  
+        <!-- Code Column -->
+        <ng-container matColumnDef="code">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Code </th>
+          <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+        </ng-container>
+  
+        <!-- Product Column -->
+        <ng-container matColumnDef="product">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Produit </th>
+          <td mat-cell *matCellDef="let element"> {{element.product.code}}/{{element.product.name}} </td>
+        </ng-container>
+
+        <!-- maxBuyPrice Column -->
+        <ng-container matColumnDef="maxBuyPrice">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Montant Utilisé(Dzd) </th>
+            <td mat-cell *matCellDef="let element"> {{element.maxBuyPrice}} </td>
+        </ng-container>
+
+  
+        <!-- isSummerPrice Column -->
+        <ng-container matColumnDef="isSummerPrice">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Prix d'Ete(Dzd) </th>
+            <td mat-cell *matCellDef="let element" [ngClass]="{'correct-price': element.isSummerPrice}"> {{element.summerPrice}}/{{element.isSummerPrice ? 'Oui' : 'Non'}} </td>
+        </ng-container>
+
+  
+        <!-- isAutumnPrice Column -->
+        <ng-container matColumnDef="isAutumnPrice">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Prix d'Automne(Dzd) </th>
+            <td mat-cell *matCellDef="let element"> {{element.autumnPrice}}/{{element.isAutumnPrice ? 'Oui' : 'Non'}} </td>
+        </ng-container>
+  
+        <!-- isWinterPrice Column -->
+        <ng-container matColumnDef="isWinterPrice">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Prix d'Ete(Dzd) </th>
+            <td mat-cell *matCellDef="let element"> {{element.winterPrice}}/{{element.isWinterPrice ? 'Oui' : 'Non'}} </td>
+        </ng-container>
+  
+        <!-- isSpringPrice Column -->
+        <ng-container matColumnDef="isSpringPrice">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Prix d'Ete(Dzd) </th>
+            <td mat-cell *matCellDef="let element"> {{element.springPrice}}/{{element.isSpringPrice ? 'Oui' : 'Non'}} </td>
+        </ng-container>
+        <!-- Actions Column -->
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef> Actions </th>
+          <td mat-cell *matCellDef="let element"> 
+            <!--<button mat-mini-fab aria-label="Détails">
+              <mat-icon>remove_red_eye</mat-icon>
+            </button>-->
+            <button mat-mini-fab aria-label="Modifier">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+  
+      <mat-paginator [length]="globalPayload.totalNumberOfElements" [pageSizeOptions]="[10, 20, 50]" showFirstLastButtons
+        (page)="onPaginationChange($event)"></mat-paginator>
+    </div>
+  </div>

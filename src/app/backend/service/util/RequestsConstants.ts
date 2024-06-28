@@ -42,7 +42,7 @@ export class RequestsConstants{
     static readonly NOMENCLATURE_UPDATE_REQ = RequestsConstants.NOMENCLATURE_REQ + UtilStatic.SLASH + UtilStatic.UPDATE;
     static readonly NOMENCLATURE_DELETE_REQ = RequestsConstants.NOMENCLATURE_REQ + UtilStatic.SLASH + UtilStatic.DELETE;
     static readonly NOMENCLATURE_FINDALL_REQ = RequestsConstants.NOMENCLATURE_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL;
-    static readonly NOMENCLATURE_FINDALL_CRITERIA_REQ = RequestsConstants.PRODUCT_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL_BY_CRITERIA;
+    static readonly NOMENCLATURE_FINDALL_CRITERIA_REQ = RequestsConstants.NOMENCLATURE_REQ + UtilStatic.SLASH + UtilStatic.FIND_ALL_BY_CRITERIA;
     //UNIT
     static readonly UNIT_REQ = RequestsConstants.API_SOURCE + BusinessConstants.UNIT;
     static readonly UNIT_ADD_REQ = RequestsConstants.UNIT_REQ + UtilStatic.SLASH + UtilStatic.ADD;
